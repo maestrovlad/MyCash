@@ -1,0 +1,117 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vb.mycash.WeekFragment"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_lin"
+        android:weightSum="1">
+
+        <TextView
+            fontPath="fonts/PTN57F.ttf"
+            android:textSize="20dp"
+            android:text="Доходи"
+            android:textColor="#2E7D32"
+            android:layout_marginTop="70dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            fontPath="fonts/PTN57F.ttf"
+            android:textSize="30dp"
+            android:text="Income"
+            android:textColor="#1B5E20"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/income_of_cash_week"/>
+
+        <TextView
+            fontPath="fonts/PTN57F.ttf"
+            android:textSize="20dp"
+            android:text="Расходи"
+            android:textColor="#C62828"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            fontPath="fonts/PTN57F.ttf"
+            android:textSize="30dp"
+            android:text="Expenses"
+            android:textColor="#B71C1C"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expenses_of_cash_week"/>
+
+        <TextView
+            fontPath="fonts/PTN57F.ttf"
+            android:textSize="40dp"
+            android:layout_marginTop="100dp"
+            android:textAlignment="center"
+            android:text="Balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/balance_of_week_cash"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/l_ls">
+
+            <info.hoang8f.widget.FButton
+                fontPath="fonts/PTN57F.ttf"
+                android:textSize="30dp"
+                android:height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="CashMinus"
+                android:text="-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/minus_cash"
+                android:layout_weight="1"
+                fbutton:buttonColor="#CDDC39"
+                fbutton:shadowColor="#C0CA33"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp"
+                fbutton:cornerRadius="5dp"/>
+
+            <info.hoang8f.widget.FButton
+                fontPath="fonts/PTN57F.ttf"
+                android:textSize="30dp"
+                android:height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="CashPlus"
+                android:text="+"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/plus_cash"
+                android:layout_weight="1"
+                fbutton:buttonColor="#4DB6AC"
+                fbutton:shadowColor="#26A69A"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp"
+                fbutton:cornerRadius="5dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

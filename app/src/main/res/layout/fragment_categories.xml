@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vb.mycash.CategoriesFragment"
+    tools:ignore="MissingPrefix">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_lin"
+        android:weightSum="1">
+
+        <TextView
+            fontPath="fonts/PTN57F.ttf"
+            android:textSize="20dp"
+            android:textColor="#1B5E20"
+            android:id="@+id/text_expenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Expenses" />
+
+    <ListView
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_all_categories_income"
+        />
+
+    <TextView
+        android:textColor="#B71C1C"
+        android:layout_marginTop="20dp"
+        fontPath="fonts/PTN57F.ttf"
+        android:textSize="20dp"
+        android:id="@+id/text_incomes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Incomes" />
+
+    <ListView
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_all_categories_expense" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/day_cash"
+            android:icon="@mipmap/ic_day"
+            android:title="Day" />
+        <item
+            android:id="@+id/week_cash"
+            android:icon="@mipmap/ic_week"
+            android:title="Week" />
+        <item
+            android:id="@+id/mounth_cash"
+            android:icon="@mipmap/ic_mounth"
+            android:title="Mounth" />
+        <item
+            android:id="@+id/year_cash"
+            android:icon="@mipmap/ic_year"
+            android:title="Year" />
+        <item
+            android:id="@+id/calendar_cash"
+            android:icon="@mipmap/ic_calenadr"
+            android:title="Calendar" />
+
+        <item
+            android:id="@+id/setting_categories"
+            android:icon="@mipmap/ic_categories"
+            android:title="Categories" />
+    </group>
+
+</menu>
